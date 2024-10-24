@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+header {
+    background-color: #DA8896; 
+    padding: 20px;
+    display: flex;
+    width: 100%
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%
+}
+
+.logo img {
+   width: 9rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; 
+    gap: 3rem; 
+    margin-left: auto; 
+    margin-right: 3rem;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+    font-family: 'Cursive';
+}
+
+main {
+    min-height: calc(100vh - 185px);
+}
+
+/* .main-page {
+    /* background-image:url('background.png');
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; */
+/* } */ 
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #556B2F; 초록색 배경 */
+    height: 100vh;
+    /* padding: 20px; */
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* 비디오가 컨테이너 밖으로 넘치지 않도록 */
+    z-index: -1; /* 다른 콘텐츠보다 뒤에 위치하도록 설정 */
+}
+
+/* 비디오를 페이지의 배경으로 설정 */
+#background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    object-fit: cover; /* 비디오가 화면에 꽉 차게 조정 */
+}
+
+.promos {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.promo-item {
+    padding: 10px;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.promo-item img {
+    width: 100%;
+}
+
+footer {
+    background-color: #B4B4B4; /* 회색 */
+    color: white;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 18px;
+}
+
+.footer-logo h2 {
+    font-size: 24px;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    background-color: #666666; 
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.event-section {
+    text-align: center;
+    margin: 50px 0;
+    color: #DA8896;
+}
+
+.event-title {
+    font-size: 8.5rem;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 3rem;
+}
+
+.event-promotion {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.event-detail{
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.event-date {
+    font-size: 1rem;
+    color: #888;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 3rem;
+}
+
+.line { 
+    width: 90%;             
+    border-bottom: 1px solid #E5E4E4; 
+    margin: 0 auto;        
+    margin-top: 2rem;       
+    margin-bottom: 5rem;    
+}
+
+.icecream-event-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10rem;
+    width: 100%;
+    > img {
+    	width: 50vw;
+    }
+}
